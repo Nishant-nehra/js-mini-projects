@@ -1,0 +1,82 @@
+var curr='';
+var textarea=document.querySelector('textarea');
+
+document.querySelector('#zero').onclick=function(){
+	textarea.value=(curr+'0');
+	curr+='0';
+}
+document.querySelector('#one').onclick=function(){
+	textarea.value=(curr+'1');
+	curr+='1';
+}
+document.querySelector('#two').onclick=function(){
+	textarea.value=(curr+'2');
+	curr=textarea.value;
+}
+document.querySelector('#three').onclick=function(){
+	textarea.value=(curr+'3');
+	curr=textarea.value;
+}
+document.querySelector('#four').onclick=function(){
+	textarea.value=(curr+'4');
+	curr=textarea.value;
+}
+document.querySelector('#five').onclick=function(){
+	textarea.value=(curr+'5');
+	curr=textarea.value;
+}
+document.querySelector('#six').onclick=function(){
+	textarea.value=(curr+'6');
+	curr=textarea.value;
+}
+document.querySelector('#seven').onclick=function(){
+	textarea.value=(curr+'7');
+	curr=textarea.value;
+}
+document.querySelector('#eight').onclick=function(){
+	textarea.value=(curr+'8');
+	curr=textarea.value;
+}
+document.querySelector('#nine').onclick=function(){
+	textarea.value=(curr+'9');
+	curr=textarea.value;
+}
+document.querySelector('#decimal').onclick=function(){
+	textarea.value=(curr+'.');
+	curr=textarea.value;
+}
+document.querySelector('#add').onclick=function(){
+	textarea.value=(curr+'+');
+	curr=textarea.value;
+}
+document.querySelector('#subtract').onclick=function(){
+	textarea.value=(curr+'-');
+	curr=textarea.value;
+}
+document.querySelector('#multiply').onclick=function(){
+	textarea.value=(curr+'*');
+	curr=textarea.value;
+}
+document.querySelector('#divide').onclick=function(){
+	textarea.value=(curr+'/');
+	curr=textarea.value;
+}
+document.querySelector('#AC').onclick=function(){
+	curr=''
+	textarea.value=(curr);
+}
+document.querySelector('#sign').onclick=function(){
+	var opp='-1';
+	textarea.value=(eval(curr+'*'+opp));
+	curr=textarea.value;
+}
+document.querySelector('#modulus').onclick=function(){
+	var opp='/100';
+	textarea.value=(eval(curr+opp));
+	curr=textarea.value;
+}
+
+document.querySelector('#equal').onclick=function(){
+	textarea.value=(eval(curr));
+	curr=textarea.value;
+}
